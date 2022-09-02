@@ -1,0 +1,29 @@
+Vector3
+Vector3.MoveTowards	등속이동
+Vector3.SmoothDamp	부드러운감속 수치를 많게 줄수록 느린속도
+Vector3.Lerp		비슷한데 수치를 적게 줄수록 느린속도
+Vector3.Slerp		원형, 구면 선형 보간
+
+
+
+RigidBody
+	Kinematic		외부 물리 효과를 무시	움직이는 함정 만들때 좋음
+	FixedUpdate	함수에 작성하면 좋음 (물리엔진)
+	AddTorque(Vec)	Vec 방향을 축으로 회전력이 생김
+
+
+Phsics Material
+	friction(마찰력)
+	Bounciness(탄성)
+
+
+
+
+2D Sprite
+	GameView - Stat
+	Batch는 동일한 메터리얼 공유해서 Draw Call(그리기 요청)하는 것
+	아틀라스 하나당 Batch가 늘어나는데 
+	한곳에 다 모아두면 Batch가 줄어들기 때문에 
+	CPU를 적게 돌게 함 ==> 최적화가능	
+
+
