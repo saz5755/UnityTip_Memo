@@ -10,13 +10,13 @@ RigidBody
 	Kinematic		외부 물리 효과를 무시	움직이는 함정 만들때 좋음
 	FixedUpdate	함수에 작성하면 좋음 (물리엔진)
 	AddTorque(Vec)	Vec 방향을 축으로 회전력이 생김
+	Linear Drag : 공기 저항, 이동시 속도 느리게 해줌
+
 
 
 Phsics Material
 	friction(마찰력)
 	Bounciness(탄성)
-
-
 
 
 2D Sprite
@@ -26,4 +26,8 @@ Phsics Material
 	한곳에 다 모아두면 Batch가 줄어들기 때문에 
 	CPU를 적게 돌게 함 ==> 최적화가능	
 
+	
+달 중력을 나타내고 싶다면
+	projectSetting 에 중력값 설정 해주고서 
+	RigidBody - Gravity scale 조절하기 달은 지구의 1/6정도 중력임.
 
